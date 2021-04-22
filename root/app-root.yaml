@@ -12,5 +12,5 @@ spec:
   project: default
   source:
     path: apps
-    repoURL: https://github.com/apiloqbc/argocd-staging.git
+    repoURL: https://github.com/apiloqbc/argocd-staging
     targetRevision: HEAD
