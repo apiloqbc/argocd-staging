@@ -6,11 +6,14 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
-  destination:
-    namespace: argocd
-    server: https://kubernetes.default.svc
-  project: default
+project: default
   source:
+    repoURL: 'https://github.com/apiloqbc/argocd-staging'
     path: org-3-custom
-    repoURL: https://github.com/apiloqbc/argocd-staging
     targetRevision: HEAD
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: argocd
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
