@@ -11,6 +11,8 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: helm-guestbook
-    repoURL: https://github.com/argoproj/argocd-example-apps
-    targetRevision: HEAD
+    helm:
+      path: ''
+      repoURL: 'https://kubernetes-charts.storage.googleapis.com'
+      targetRevision: 5.0.2
+      chart: wordpress
