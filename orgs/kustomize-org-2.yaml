@@ -6,7 +6,7 @@ patchesStrategicMerge:
   - |-
     spec:
       destination:
-        namespace: my2
+        namespace: my4
 
 
 resources:
