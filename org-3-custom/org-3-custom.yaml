@@ -13,6 +13,9 @@ spec:
   source:
     repoURL: 'https://helm.nginx.com/stable'
     targetRevision: 0.9.1
+    helm:
+      valueFiles:
+        - values.yaml
     chart: nginx-ingress
   syncPolicy:
     syncOptions:
