@@ -11,6 +11,6 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: customs/org-3
+    path: org-3
     repoURL: https://github.com/apiloqbc/argocd-staging
     targetRevision: HEAD
