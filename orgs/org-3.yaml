@@ -7,10 +7,10 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: my
+    namespace: my3
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: org-3
+    path: org-3-custom
     repoURL: https://github.com/apiloqbc/argocd-staging
     targetRevision: HEAD
