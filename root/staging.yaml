@@ -11,6 +11,8 @@ spec:
     repoURL: 'https://github.com/apiloqbc/argocd-staging'
     path: orgs
     targetRevision: main
+    directory:
+      recurse: true
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: argocd
