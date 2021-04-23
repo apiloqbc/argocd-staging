@@ -12,5 +12,5 @@ spec:
   project: default
   source:
     path: customs/org-3
-    repoURL: https://github.com/argoproj/argocd-example-apps
+    repoURL: https://github.com/apiloqbc/argocd-staging
     targetRevision: HEAD
