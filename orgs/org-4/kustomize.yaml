@@ -4,13 +4,17 @@ kind: Kustomization
 
 patchesStrategicMerge:
   - |-
+    apiVersion: argoproj.io/v1alpha1
+    kind: Application
+    metadata:
+      name: org-4
     spec:
       destination:
-        namespace: my3
+        namespace: my4
 
 
 resources:
-  - distribution.yaml
+  - ../../distribution.yaml
 
 commonLabels:
   app: hello
