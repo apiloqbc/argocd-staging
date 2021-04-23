@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: org-3-custom
-  namespace: argocd
+  namespace: my3
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
