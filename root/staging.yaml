@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: root-staging
+  name: staging
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
@@ -11,6 +11,6 @@ spec:
     name: argocd
   project: default
   source:
-    path: apps
+    path: orgs
     repoURL: https://github.com/apiloqbc/argocd-staging
     targetRevision: HEAD
