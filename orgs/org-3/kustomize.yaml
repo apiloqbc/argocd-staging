@@ -14,7 +14,7 @@ patchesStrategicMerge:
 
 
 resources:
-  - ../../distribution.yaml
+  - distribution.yaml
 
 commonLabels:
   app: hello
