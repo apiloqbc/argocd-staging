@@ -1,22 +1,27 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: org-3-custom
-  namespace: my3
+  name: org
+  namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: my3
+    namespace: my1
     server: https://kubernetes.default.svc
   project: default
   source:
     repoURL: 'http://cuebiq-museum.cuebiq:8080/cuebiq/ds'
-    targetRevision: 0.0.2
+    targetRevision: 0.1.0
     helm:
       valueFiles:
         - values.yaml
-    chart: ds-app-gallery-trade-area
+    chart: simple-chart
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
+    automated:
+      prune: false
+      selfHeal: false
+
+
